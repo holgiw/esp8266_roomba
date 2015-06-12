@@ -1,0 +1,9 @@
+path_data:
+choosed:\ESP8266\roomba\bin\boot_v1.1.bin;0x0000;
+empty:\ESP8266\roomba\bin\upgrade\user1.bin;0x01000;
+empty:\ESP8266\roomba\bin\blank.bin;0x7e000;
+empty:;0x00000;
+empty:;0x00000;
+empty:;0x00000;
+empty:;;
+default_path:D:\Bahn\ESP8266\roomba\bin;
