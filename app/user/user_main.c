@@ -13,14 +13,7 @@
  *
  * Hardware-Reset GPIO13 f�r 5 Sekunden gg. Masse
  *
- * Benutzung
- * WLAN einrichten  http://192.168.4.1
- * Webinterface:    http://192.168.0.100
- * Roomba CMD:      http://192.168.0.100/cmd=128:131:135:0:0
- * Version:         http://192.168.0.100/ver
- * Update per WLAN: http://192.168.0.100/upd=192.168.0.70
- * (192.168.0.70 Web-Server mit eingerichtetem Webordner /roomba/device/rom/ vorausgesetzt)
- *
+ * 
  *
  * Roomba CMD siehe roomba.h
  *
