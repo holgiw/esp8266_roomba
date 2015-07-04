@@ -51,6 +51,7 @@
     #define myDOCK              206
     #define myCLEAN             207
     #define myReset             210
+    #define mySong              211
 
     // Sensors
     #define SENSORS_ALL          0

@@ -207,13 +207,13 @@ uart0_rx_intr_handler(void *para)
 //  }
   if(UART_FRM_ERR_INT_ST == (READ_PERI_REG(UART_INT_ST(uart_no)) & UART_FRM_ERR_INT_ST))
   {
-    os_printf("FRM_ERR\r\n");
+    // ("FRM_ERR\r\n");
     WRITE_PERI_REG(UART_INT_CLR(uart_no), UART_FRM_ERR_INT_CLR);
   }
 
   if(UART_RXFIFO_FULL_INT_ST == (READ_PERI_REG(UART_INT_ST(uart_no)) & UART_RXFIFO_FULL_INT_ST))
   {
-//    os_printf("fifo full\r\n");
+//    // ("fifo full\r\n");
     ETS_UART_INTR_DISABLE();/////////
 
     system_os_post(at_recvTaskPrio, 0, 0);
@@ -233,10 +233,10 @@ uart0_rx_intr_handler(void *para)
     system_os_post(at_recvTaskPrio, 0, 0);
 
 //    WRITE_PERI_REG(UART_INT_CLR(uart_no), UART_RXFIFO_TOUT_INT_CLR);
-////    os_printf("rx time over\r\n");
+////    // ("rx time over\r\n");
 //    while (READ_PERI_REG(UART_STATUS(uart_no)) & (UART_RXFIFO_CNT << UART_RXFIFO_CNT_S))
 //    {
-////      os_printf("process recv\r\n");
+////      // ("process recv\r\n");
 ////      at_recvTask();
 //      RcvChar = READ_PERI_REG(UART_FIFO(uart_no)) & 0xFF;
 //      system_os_post(at_recvTaskPrio, NULL, RcvChar);
